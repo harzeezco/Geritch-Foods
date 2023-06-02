@@ -88,7 +88,7 @@ body {
 
 .grid {
   display: grid;
-  gap: 6rem;
+  gap: 4rem;
 }
 
 .grid--col-2 {
@@ -158,8 +158,20 @@ body {
   gap: 10rem;
 }
 
-.small-gap {
+.medium-gap {
     gap: 6rem;
+}
+
+.small-gap {
+  column-gap: 2rem;
+}
+
+.title {
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: inherit;
+    color: #aaa;
+    line-height: 170%;
 }
 
 /***********************/
@@ -291,23 +303,16 @@ body {
   bottom: -2rem;
   display: flex;
   flex-direction: column;
-  animation: scroll 3s infinite linear;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+  animation: scroll 3s infinite linear forwards;
+  animation-duration: 3s;
 }
 
 @keyframes scroll {
   0% {
     transform: translateY(0rem);
   }
-  25% {
-    transform: translateY(-0.3rem);
-  }
-  50% {
-    transform: translateY(-0.5rem);
-  }
   100% {
-    transform: translateY(-1rem);
+    transform: translateY(.8rem);
   }
 }
 
@@ -397,6 +402,7 @@ body {
   max-height: 40rem;
   opacity: 0.7;
   object-fit: contain;
+  width: 100%;
 }
 
 /***********************/
@@ -434,7 +440,7 @@ body {
 }
 
 .sub-heading.text {
-  font-size: 2.3rem;
+  font-size: 2rem;
   color: #fff;
 }
 
@@ -479,9 +485,45 @@ blockquote img {
     font-weight: 400;
 }
 
-.chef-title {
-    font-family: inherit;
-    font-size: 1.4rem;
-    font-weight: inherit;
-    color: #aaa;
+
+/***********************/
+/* Awards And Regulation */
+/***********************/
+
+.spoon-img-container {
+  position: absolute;
+  left: 3rem;
+  top: 5rem;
+  object-fit: contain;
+  animation: rotate 4s infinite linear forwards;
+  animation-duration: 7s;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spoon-img {
+height: 11rem;
+}
+
+.awards-heading {
+  font-size: 5rem;
+}
+
+.awards-img {
+  height: 7rem;
+}
+
+.body-pad {
+  padding: 1rem 3rem;
+}
+
+.heading-tertiary {
+  color: #DCCA87;
 }
