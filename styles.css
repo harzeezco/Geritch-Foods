@@ -84,7 +84,12 @@ body {
 .container {
   max-width: 102rem;
   margin: 0 auto;
-  padding: 0 3rem;
+ padding: 8rem 3rem;
+
+}
+
+.container-pad {
+   
 }
 
 .grid {
@@ -134,7 +139,6 @@ body {
 }
 
 .section {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,6 +222,10 @@ body {
 
 .logo {
   height: 2.5rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /***********************/
@@ -308,6 +316,7 @@ body {
   margin: 0 auto;
   align-items: center;
   gap: 6rem;
+  
 }
 
 .hero-img {
@@ -400,23 +409,29 @@ body {
   background-image: url("img/BG.png");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  width: 100%;
+  
   z-index: -1;
+  /* min-height: 70vh; */
+}
+
+.about-section-box {
+  position: relative;
+  z-index: 2;
+}
+
+.logo-overlay {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 33rem;
+  max-height: 41rem;
 }
 
 .G-logo {
-  max-height: 41rem;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 33rem;
-  width: 100%;
-
-  position: absolute;
-  z-index: 10;
-  top: 50%;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
+  width: 100%; 
 }
 
 .absolute {
@@ -464,7 +479,7 @@ body {
 
 .special-foods-section {
   background-color: #0c0b08;
-  padding: 7rem 0;
+  /* padding: 7rem 0; */
 }
 
 .special-foods-desc-head {
@@ -540,6 +555,10 @@ blockquote img {
 /***********************/
 /* Awards And Regulation */
 /***********************/
+
+.award-section {
+  position: relative;
+}
 
 .spoon-img-container {
   position: absolute;
@@ -621,7 +640,6 @@ blockquote img {
 
 .footer {
   background-image: url("img/footer.png");
-  height: 110vh;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -630,12 +648,12 @@ blockquote img {
 .cta {
   max-width: 70%;
   width: 100%;
-  min-height: 50vh;
   margin: 0 auto;
   background: #0c0c0c;
   border: 1px solid rgba(220, 202, 135, 0.2);
   text-align: center;
   box-shadow: 22px 30px 95px 1px rgba(0, 0, 0, 0.7);
+  padding: 4rem 0;
 }
 
 
