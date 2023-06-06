@@ -52,13 +52,17 @@ html {
   text-decoration: none;
 }
 
+.overflow {
+  overflow: hidden !important;
+}
+
 body {
   line-height: 1;
   font-weight: 400;
   color: #fff;
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 /***********************/
@@ -95,6 +99,8 @@ body {
   align-items: center;
 }
 
+.award-text-box-content,
+.contact-section-box,
 .grid--col-2 {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -142,6 +148,7 @@ body {
   flex-direction: column;
 }
 
+.blog-box,
 .flex {
   display: flex;
   justify-content: space-between;
@@ -215,6 +222,7 @@ body {
   background-color: #0c0b08;
   height: 7.5rem;
   padding: 0 6rem;
+  position: relative;
 }
 
 .logo {
@@ -650,7 +658,7 @@ blockquote img {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding: 7rem 0rem;
+  padding: 0rem 0rem 7rem 0rem;
 }
 
 .cta {
@@ -700,13 +708,12 @@ blockquote img {
 }
 
 .contact-box {
-
 }
 
 .contact:link,
 .contact:visited {
   font-size: 1.3rem;
-  color: #aaa!important;
+  color: #aaa !important;
 }
 
 .footer-heading {
@@ -722,7 +729,7 @@ blockquote img {
 .logo-col p {
   font-size: 1.3rem;
   line-height: 170%;
-  margin-bottom: .7rem;
+  margin-bottom: 0.7rem;
 }
 
 .Gerícht-logo {
@@ -739,9 +746,9 @@ blockquote img {
 .social-box {
   color: #f5efdb;
   font-size: 2.5rem;
-  transition: all .4s;
+  transition: all 0.4s;
   cursor: pointer;
-  margin: .7rem;
+  margin: 0.7rem;
 }
 
 .social-box:hover {
