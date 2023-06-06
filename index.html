@@ -27,9 +27,10 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="queries.css" />
 
-    <title>Document</title>
+    <title>Gerícht Foods &mdash; Home Of All Foods</title>
   </head>
   <body>
+    <!-- Navbar -->
     <header class="header flex">
       <img class="logo" src="img/Gerícht.svg" alt="Geritch Logo" />
 
@@ -44,15 +45,13 @@
       </nav>
 
       <button class="nav-toggle">
-        <ion-icon
-          class="nav-toggle-open"
-          name="reorder-three-outline"
-        ></ion-icon>
-        <ion-icon class="nav-toggle-close" name="close-outline"></ion-icon>
+        <ion-icon class="icon-nav" name="reorder-three-outline"></ion-icon>
+        <ion-icon class="icon-nav" name="close-outline"></ion-icon>
       </button>
     </header>
 
     <main>
+      <!-- Hero -->
       <section class="hero-section">
         <div class="hero">
           <div class="hero-text-box">
@@ -84,19 +83,23 @@
               alt="Woman enjoying food, meals in storage container and food on a table"
             />
             <div class="scroll">
-              <img src="img/Vector 8.svg" alt="" />
+              <img
+                src="img/Vector 8.svg"
+                alt="A line to scroll throuugh the page"
+              />
               <p>Scroll</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="about-section section">
+      <!-- About  -->
+      <section class="about-section section-bg section">
         <div class="about-section-box">
           <div class="logo-overlay">
             <img class="G-logo" src="img/G.png" alt="Geritch logo image" />
           </div>
-          <div class="container grid grid--col-3 about-section-box ">
+          <div class="container grid grid--col-3 about-text-box">
             <div class="flex-column center-right">
               <h2 class="heading-desc desc-mar-bottom underline">About Us</h2>
               <p class="about-desc right-align desc-mar-bottom">
@@ -106,8 +109,8 @@
               </p>
               <a href="#" class="btn">Explore Now</a>
             </div>
-            <div class="knife-container">
-              <img class="knife" src="img/knife.png.png" alt="a knife image" />
+            <div class="img-box">
+              <img class="img" src="img/knife.png" alt="A knife image" />
             </div>
             <div class="flex-column center-left">
               <h2 class="heading-desc desc-mar-bottom">Our history</h2>
@@ -122,19 +125,24 @@
         </div>
       </section>
 
+      <!-- Menu -->
       <section class="special-foods-section section">
         <div class="container text-center">
           <h3 class="sub-heading text">Menu that fits your palatte</h3>
           <h2 class="heading-desc desc-mar-bottom">Today’s Special</h2>
 
           <div class="grid grid--col-3 gap desc-mar-bottom">
+            <!-- Wine & Beer -->
             <div>
               <h3 class="special-foods-desc-head text">Wine & Beer</h3>
               <div class="special-foods-desc-content">
                 <div class="">
                   <div class="flex special-foods-desc">
                     <p class="special-food-name text">CAperol Spritz</p>
-                    <img src="img/Rectangle 14.png" alt="" />
+                    <img
+                      src="img/Rectangle 14.png"
+                      alt="A parallel line that seperate two words"
+                    />
                     <p class="price text">$56</p>
                   </div>
                   <p class="special-foods-desc-options">AU | Bottle</p>
@@ -142,7 +150,10 @@
                 <div class="">
                   <div class="flex special-foods-desc">
                     <p class="special-food-name text">Catena Malbec</p>
-                    <img src="img/Rectangle 14.png" alt="" />
+                    <img
+                      src="img/Rectangle 14.png"
+                      alt="A parallel line that seperate two words"
+                    />
                     <p class="price text">$16</p>
                   </div>
                   <p class="special-foods-desc-options">AR | Bottle</p>
@@ -150,7 +161,10 @@
                 <div class="">
                   <div class="flex special-foods-desc">
                     <p class="special-food-name text">La Vieille Rosé</p>
-                    <img src="img/Rectangle 14.png" alt="" />
+                    <img
+                      src="img/Rectangle 14.png"
+                      alt="A parallel line that seperate two words"
+                    />
                     <p class="price text">$10</p>
                   </div>
                   <p class="special-foods-desc-options">FR | 750 ml</p>
@@ -158,7 +172,10 @@
                 <div class="">
                   <div class="flex special-foods-desc">
                     <p class="special-food-name text">Rhino Pale Ale</p>
-                    <img src="img/Rectangle 14.png" alt="" />
+                    <img
+                      src="img/Rectangle 14.png"
+                      alt="A parallel line that seperate two words"
+                    />
                     <p class="price text">$19</p>
                   </div>
                   <p class="special-foods-desc-options">CA | 750 ml</p>
@@ -166,37 +183,48 @@
                 <div class="">
                   <div class="flex special-foods-desc">
                     <p class="special-food-name text">Irish Guinness</p>
-                    <img src="img/Rectangle 14.png" alt="" />
+                    <img
+                      src="img/Rectangle 14.png"
+                      alt="A parallel line that seperate two words"
+                    />
                     <p class="price text">$29</p>
                   </div>
                   <p class="special-foods-desc-options">IE | 750 ml</p>
                 </div>
               </div>
             </div>
-            <div class="knife-container">
+
+            <div class="img-box">
               <img
-                class="knife"
+                class="img"
                 src="img/3596233 1.png"
                 alt="A Flask and Different Types of Foods"
               />
             </div>
+            <!-- Cocktails -->
             <div>
               <h3 class="special-foods-desc-head text">Cocktails</h3>
               <div class="special-foods-desc-content">
                 <div class="">
                   <div class="flex special-foods-desc">
                     <p class="special-food-name text">Chapel Hill Shiraz</p>
-                    <img src="img/Rectangle 14.png" alt="" />
+                    <img
+                      src="img/Rectangle 14.png"
+                      alt="A parallel line that seperate two words"
+                    />
                     <p class="price text">$56</p>
                   </div>
                   <p class="special-foods-desc-options">
-                    Aperol | Villa Marchesi prosecco | soda 
+                    Aperol | Villa Marchesi prosecco | soda
                   </p>
                 </div>
                 <div class="">
                   <div class="flex special-foods-desc">
                     <p class="special-food-name text">Dark 'N' Stormy</p>
-                    <img src="img/Rectangle 14.png" alt="" />
+                    <img
+                      src="img/Rectangle 14.png"
+                      alt="A parallel line that seperate two words"
+                    />
                     <p class="price text">$16</p>
                   </div>
                   <p class="special-foods-desc-options">
@@ -206,7 +234,10 @@
                 <div class="">
                   <div class="flex special-foods-desc">
                     <p class="special-food-name text">Daiquiri</p>
-                    <img src="img/Rectangle 14.png" alt="" />
+                    <img
+                      src="img/Rectangle 14.png"
+                      alt="A parallel line that seperate two words"
+                    />
                     <p class="price text">$10</p>
                   </div>
                   <p class="special-foods-desc-options">
@@ -226,11 +257,14 @@
                 <div class="">
                   <div class="flex special-foods-desc">
                     <p class="special-food-name text">Negroni</p>
-                    <img src="img/Rectangle 14.png" alt="" />
+                    <img
+                      src="img/Rectangle 14.png"
+                      alt="A parallel line that seperate two words"
+                    />
                     <p class="price text">$29</p>
                   </div>
                   <p class="special-foods-desc-options">
-                    Gin | Sweet Vermouth | Campari 
+                    Gin | Sweet Vermouth | Campari
                   </p>
                 </div>
               </div>
@@ -241,9 +275,13 @@
       </section>
 
       <!-- Blog -->
-      <section class="bog-section section about-section">
+      <section class="blog-section section section-bg">
         <div class="container flex medium-gap">
-          <img class="knife" src="img/Image.png" alt="" />
+          <img
+            class="img"
+            src="img/Image.png"
+            alt="A photo showing Gerícht chef"
+          />
           <article>
             <h3 class="sub-heading text">Chef’s Word</h3>
             <h2 class="heading-desc desc-mar-bottom">What we believe in</h2>
@@ -268,7 +306,7 @@
       </section>
 
       <!-- Awards And Regulation Section -->
-      <section class="award-section about-section section">
+      <section class="award-section section-bg section">
         <!-- Spoon image -->
         <div class="spoon-img-container">
           <img
@@ -279,8 +317,10 @@
         </div>
 
         <!-- Awards And Regulation Content -->
-        <div class="container award-section-box grid--col-2  medium-gap small-gap">
-          <div class="award-text-box body-pad ">
+        <div
+          class="container award-section-box grid--col-2 medium-gap small-gap"
+        >
+          <div class="award-text-box body-pad">
             <h3 class="sub-heading text">Awards & recognition</h3>
             <h2 class="awards-heading heading-desc desc-mar-bottom">
               Our Laurels
@@ -288,7 +328,12 @@
 
             <div class="grid grid--col-2">
               <div class="flex small-gap">
-                <img src="img/Group 25.png" class="awards-img" alt="" />
+                <img
+                  src="img/Group 25.png"
+                  class="awards-img"
+                  alt="awards-img"
+                  alt="An Icon of the certain text number"
+                />
                 <div>
                   <p class="text heading-tertiary">Bib Gourmond</p>
                   <span class="title"
@@ -298,7 +343,11 @@
               </div>
 
               <div class="flex small-gap">
-                <img src="img/Vector.svg" class="awards-img" alt="" />
+                <img
+                  src="img/Vector.svg"
+                  class="awards-img"
+                  alt="An Icon of the certain text number"
+                />
                 <div>
                   <p class="text heading-tertiary">Rising Star</p>
                   <span class="title"
@@ -308,7 +357,11 @@
               </div>
 
               <div class="flex small-gap">
-                <img src="img/Group 26 (1).png" class="awards-img" alt="" />
+                <img
+                  src="img/Group 26 (1).png"
+                  class="awards-img"
+                  alt="An Icon of the certain text number"
+                />
                 <div>
                   <p class="text heading-tertiary">AA Hospitality</p>
                   <span class="title"
@@ -318,7 +371,11 @@
               </div>
 
               <div class="flex small-gap">
-                <img class="awards-img" src="img/Group 26.svg" alt="" />
+                <img
+                  class="awards-img"
+                  src="img/Group 26.svg"
+                  alt="An Icon of the certain text number"
+                />
                 <div>
                   <p class="text heading-tertiary">Outstanding Chef</p>
                   <span class="title"
@@ -329,7 +386,11 @@
             </div>
           </div>
           <div>
-            <img class="knife" src="img/Group 43.png" alt="" />
+            <img
+              class="img"
+              src="img/Group 43.png"
+              alt="An image displaying the Logo of Gerícht and the Foods"
+            />
           </div>
         </div>
       </section>
@@ -349,13 +410,25 @@
 
           <div class="grid-3">
             <figure class="galery-img-container">
-              <img class="galery-img" src="img/gallery/gallery-1.jpg" alt="" />
+              <img
+                class="galery-img"
+                src="img/gallery/gallery-1.jpg"
+                alt="A photo of foods in the gallery"
+              />
             </figure>
             <figure class="galery-img-container">
-              <img class="galery-img" src="img/gallery/gallery-2.jpg" alt="" />
+              <img
+                class="galery-img"
+                src="img/gallery/gallery-2.jpg"
+                alt="A photo of foods in the gallery"
+              />
             </figure>
             <figure class="galery-img-container">
-              <img class="galery-img" src="img/gallery/gallery-3.jpg" alt="" />
+              <img
+                class="galery-img"
+                src="img/gallery/gallery-3.jpg"
+                alt="A photo of foods in the gallery"
+              />
             </figure>
             <!-- <img class="galery-img" src="img/gallery/gallery-4.jpg" alt=""> -->
           </div>
@@ -363,7 +436,7 @@
       </section>
 
       <!-- Contact -->
-      <section class="blog-section section about-section">
+      <section class="blog-section section section-bg">
         <div class="container grid--col-2 grid">
           <article>
             <h3 class="sub-heading text">Contact</h3>
@@ -383,12 +456,16 @@
             <a href="#" class="btn">Visit Us</a>
           </article>
 
-          <img class="knife" src="img/img.png" alt="" />
+          <img
+            class="img"
+            src="img/img.png"
+            alt="A photo of a flask in the contacty"
+          />
         </div>
       </section>
     </main>
 
-    <footer class="footer"> 
+    <footer class="footer">
       <div class="cta body-pad">
         <h3 class="sub-heading text">Newsletter</h3>
         <h2 class="heading-desc desc-mar-bottom">
@@ -411,34 +488,51 @@
 
       <!-- The footer section -->
       <div class="main-footer container">
-        <div>
-          <h4>Contact</h4>
+        <address class="address margin-bottom">
+          <h4 class="footer-heading margin-bottom">Contact</h4>
+          <span class="margin-top margin-bottom">9 W 53rd St, New York, NY 10019, USA</span>
+          <p class="contact-box">
+            <a class="contact" href="#">+1 212-344-1230</a>
+            <br>
+            <a class="contact" href="#">+1 212-434-1111</a>
+          </p>
+        </address>
 
-          <p>9 W 53rd St, New York, NY 10019, USA</p>
-          <p>+1 212-344-1230</p>
-          <p>+1 212-555-1111</p>
-        </div>
-        <div>
-          <img class="logo" src="img/Gerícht (1).png" alt="The Geritch Logo" />
-          <p>
+        <div class="logo-col">
+          <h3 class="Gerícht-logo margin-bottom">Gerícht</h3>
+          <p class="margin-top">
             "The best way to find yourself is to lose yourself in the service of
             others.”
           </p>
+          <figure class="social">
+            <span class="social-box"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></span>
+            <span class="social-box"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></span>
+            <span class="social-box"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></span>
+          </figure>
         </div>
         <div>
-          <h4>Working Hours</h4>
+          <h4 class="footer-heading margin-bottom">Working Hours</h4>
 
-          <div>
-            <p>Monday-Friday:</p>
-            <p>08:00 am -12:00 am</p>
+          <div class="address margin-bottom">
+            <span>Monday-Friday:</span>
+            <span>08:00 am -12:00 am</span>
           </div>
 
-          <div>
-            <p>Saturday-Sunday:</p>
-            <p>07:00am -11:00 pm</p>
+          <div class="address">
+            <span>Saturday-Sunday:</span>
+            <span>07:00am -11:00 pm</span>
           </div>
         </div>
       </div>
+      <p class="address text-center">2021 Gerícht. All Rights reserved.</p>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>

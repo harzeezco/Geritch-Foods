@@ -42,21 +42,23 @@ FONT SIZE SYSTEM (px)
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 body {
-  font-family: sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #fff;
   font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /***********************/
@@ -84,12 +86,7 @@ body {
 .container {
   max-width: 102rem;
   margin: 0 auto;
- padding: 8rem 3rem;
-
-}
-
-.container-pad {
-   
+  padding: 8rem 3rem;
 }
 
 .grid {
@@ -143,7 +140,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
 
 .flex {
@@ -288,18 +284,21 @@ body {
   background-color: #b0a26c;
 }
 
+.icon-nav,
 .nav-toggle {
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: #fff;
-  background: inherit;
+  background: none;
   border: none;
+  position: relative;
+  z-index: 10;
   display: none;
+  cursor: pointer;
 }
 
-[name="close-outline"] {
+.icon-nav[name="close-outline"] {
   display: none;
 }
-
 
 /***********************/
 /* Hero */
@@ -317,7 +316,6 @@ body {
   margin: 0 auto;
   align-items: center;
   gap: 6rem;
-  
 }
 
 .hero-img {
@@ -336,12 +334,11 @@ body {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  
 }
 
 .deliverd-imgs img {
-  height: 4rem;
-  width: 4rem;
+  height: 4.5rem;
+  width: 4.5rem;
   border-radius: 50%;
   margin-right: -1rem;
   border: 3px solid #f1eacf;
@@ -406,16 +403,16 @@ body {
 /* About */
 /***********************/
 
-.about-section {
+.section-bg {
   background-image: url("img/BG.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  
+
   z-index: -1;
-  /* min-height: 70vh; */
 }
 
+.about-text-box,
 .about-section-box {
   position: relative;
   z-index: 2;
@@ -432,7 +429,7 @@ body {
 }
 
 .G-logo {
-  width: 100%; 
+  width: 100%;
 }
 
 .absolute {
@@ -463,11 +460,11 @@ body {
   font-size: 1.2rem;
 }
 
-.knife-container {
+.img-box {
   justify-self: center;
 }
 
-.knife {
+.img {
   max-height: 40rem;
   opacity: 0.7;
   object-fit: contain;
@@ -653,6 +650,7 @@ blockquote img {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding: 7rem 0rem;
 }
 
 .cta {
@@ -666,32 +664,86 @@ blockquote img {
   padding: 4rem 0;
 }
 
-
-
 .cta-input {
   background: inherit;
   width: 50%;
   padding: 1.1rem 5rem 1.1rem 1rem;
   color: #aaa;
   margin-right: 1.2rem;
-  transition: all .5s;
-  border: 1px solid #F5EFDB;
+  transition: all 0.5s;
+  border: 1px solid #f5efdb;
 }
 
 .cta-input:focus,
 .cta-input:active {
-  outline: 1px solid #F5EFDB;
+  outline: 1px solid #f5efdb;
 }
 
 .cta-btn {
-  padding: 1rem 2rem!important;
+  padding: 1rem 2rem !important;
 }
 
 .main-footer {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1.5fr 1fr;
   align-items: center;
-  place-content: center;
   text-align: center;
-  padding: 6rem 3rem;
+  padding: 9rem 3rem;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  color: #aaa;
+  line-height: 175%;
+}
+
+.contact-box {
+
+}
+
+.contact:link,
+.contact:visited {
+  font-size: 1.3rem;
+  color: #aaa!important;
+}
+
+.footer-heading {
+  font-size: 2.5rem;
+  font-family: "Cormorant Upright", serif;
+  color: #f5efdb;
+}
+
+.logo-col {
+  padding: 0rem 5rem;
+}
+
+.logo-col p {
+  font-size: 1.3rem;
+  line-height: 170%;
+  margin-bottom: .7rem;
+}
+
+.Gerícht-logo {
+  font-family: "Cormorant Upright";
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 130%;
+  color: #dcca87;
+}
+
+.social-box {
+  color: #f5efdb;
+  font-size: 2.5rem;
+  transition: all .4s;
+  cursor: pointer;
+  margin: .7rem;
+}
+
+.social-box:hover {
+  color: #dcca87;
 }
