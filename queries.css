@@ -1,7 +1,7 @@
 @media (max-width: 83em) {
-  .grid {
+  /* .grid {
     gap: 2rem;
-  }
+  } */
 
   .spoon-img {
     height: 9rem;
@@ -16,7 +16,7 @@
 @media (max-width: 75em) {
   /* 9px */
   html {
-    font-size: 56.25;
+    font-size: 56.25%;
   }
 
   .heading-description {
@@ -47,20 +47,47 @@
 
 @media (max-width: 58em) {
   /* 8px */
-  html {
-    font-size: 50%;
+  /* html {
+    font-size: 55%;
+  } */
+
+
+   .scroll {
+    right: 4rem;
+    bottom: -2rem;
   }
 
-  .delivered-meals {
-    justify-content: flex-start;
-  }
-}
+  .main-nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: brown;
+    z-index: 10;
+    visibility: hidden;
 
-@media (max-width: 47em) {
-  /* 8px */
-  html {
-    font-size: 43.75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  
+  .show-nav {
+    visibility: visible;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
 
   .hero {
     grid-template-columns: 1fr;
@@ -81,40 +108,60 @@
   .delivered-meals {
     justify-content: center;
     margin-top: 3rem;
+    text-align: center;
   }
 
-  .scroll {
-    right: 4rem;
-    bottom: -2rem;
-  }
 
-  .main-nav {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: brown;
-    z-index: 10;
-    visibility: hidden;
-
-    display: flex;
-    justify-content: center;
+  
+  .flex-column.center-left {
     align-items: center;
   }
 
-  .show-nav {
-    visibility: visible;
+  .about-section-box {
+    padding: 3rem 5rem;
   }
 
-  .main-nav-list {
-    flex-direction: column;
+  .award-section-box {
+    grid-template-columns: 1fr;
+    row-gap: 8rem;
+  }
+
+  .award-text-box {
+    text-align: center;
+  }
+
+   .grid--col-3 {
+    grid-template-columns: 1.5fr;
     justify-content: center;
-    align-items: center;
-    gap: 5rem;
+  }
+  .right-align,
+  .left-align {
+    text-align: center;
   }
 
-  .nav-toggle {
-    display: block;
+  .flex-column.center-right {
+    align-items: center;
   }
+}
+
+@media (max-width: 47em) {
+  /* 8px */
+
+  
+
+ 
+
+ 
+
+
+  .galery-container {
+  padding: 0rem 3rem;
+  grid-template-columns: 1fr;
+ row-gap: 7rem;
+ text-align: center;
+}
+
+.galery-content {
+padding: 0rem 8rem;
+}
 }
