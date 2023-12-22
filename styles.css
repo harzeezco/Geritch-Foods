@@ -43,6 +43,7 @@ FONT SIZE SYSTEM (px)
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -61,7 +62,7 @@ body {
   font-weight: 400;
   color: #fff;
   font-family: "Inter", sans-serif;
-  scroll-behavior: smooth;
+  
   overflow-x: hidden !important;
 }
 
@@ -248,7 +249,6 @@ body {
 .main-nav-link:link {
   text-decoration: none;
   color: #fff;
-  font-weight: 600;
   font-size: 1.6rem;
   transition: all 0.4s;
   text-transform: capitalize;
@@ -261,15 +261,15 @@ body {
 
 .main-nav-link.nav-cta:visited,
 .main-nav-link.nav-cta:link {
-  padding: 1rem 3rem;
+  text-decoration: underline;
   border-radius: 0.2rem;
-  background-color: #dcca87;
-  color: #222;
+  color: #fff;
 }
 
 .main-nav-link.nav-cta:active,
 .main-nav-link.nav-cta:hover {
-  background-color: #b0a26c;
+  color: #b0a26c;
+  text-decoration: none;
 }
 
 .btn:link,
@@ -302,6 +302,10 @@ body {
   z-index: 10;
   display: none;
   cursor: pointer;
+}
+
+*:focus {
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 .icon-nav[name="close-outline"] {
@@ -689,6 +693,10 @@ blockquote img {
 
 .cta-btn {
   padding: 1rem 2rem !important;
+  background-color: #dcca87;
+  border: none;
+  cursor: pointer;
+  transition: all .5s;
 }
 
 .main-footer {
